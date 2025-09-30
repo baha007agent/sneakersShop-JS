@@ -13,14 +13,14 @@
     </header>
 
     <main>
-      <article class="card">
+      <article class="card" data-id="01">
         <div class="img">
-          <img src="assets/img/DR2695-007_2.webp" alt="Air Swift Runner" />
+          <img class="product-img" src="assets/img/DR2695-007_2.webp" alt="Air Swift Runner" />
         </div>
-        <h3>Air Swift Runner</h3>
-        <p>Комфортные повседневные кроссовки</p>
+        <h3 class="card-tittle">Air Swift Runner</h3>
+        <p class="card-desc">Комфортные повседневные кроссовки</p>
         <div class="counter-wrapper">
-          <h5 class="price">₸ 19 500</h5>
+          <h5 class="price">19 500 сом</h5>
           <div class="items">
             <div class="items__control" data-action="minus">-</div>
             <div class="items__current" data-counter>1</div>
@@ -28,49 +28,35 @@
           </div>
         </div>
         <div class="actions">
-          <button>Add to cart</button>
+          <button data-cart>В корзину</button>
         </div>
       </article>
 
-      <article class="card">
-        <div class="img">
-          <img src="assets/img/NIKE+RUN+SWIFT+2.avif" alt="Urban Glide 2" />
-        </div>
-        <h3>Urban Glide 2</h3>
-        <p>Легкая подошва, стильный силуэт</p>
-        <div class="counter-wrapper">
-          <h5 class="price">₸ 19 500</h5>
-          <div class="items">
-            <div class="items__control" data-action="minus">-</div>
-            <div class="items__current" data-counter>1</div>
-            <div class="items__control" data-action="plus">+</div>
-          </div>
-        </div>
-        <div class="actions">
-          <button>Add to cart</button>
-        </div>
-      </article>
+      <section class="cart">
+        <h2>Моя корзина</h2>
 
-      <article class="card">
-        <div class="img">
-          <img src="assets/img/NIKE+RUN+SWIFT+3.png" alt="Trail Master X" />
-        </div>
-        <h3>Trail Master X</h3>
-        <p>Для активного отдыха и трекинга</p>
-        <div class="counter-wrapper">
-          <h5 class="price">₸ 19 500</h5>
-          <div class="items">
-            <div class="items__control" data-action="minus">-</div>
-            <div class="items__current" data-counter>1</div>
-            <div class="items__control" data-action="plus">+</div>
+        <!-- ПУСТАЯ КОРЗИНА -->
+        <div class="cart-empty">Корзина пуста 🛒</div>
+
+        <!-- ЕСЛИ ЕСТЬ ТОВАРЫ -->
+        <div class="cart-wrapper"></div>
+
+        <!-- Итог -->
+        <div class="summary">
+          <div class="summary-row">
+            <span>Доставка</span>
+            <span>Бесплатно</span>
           </div>
+          <div class="summary-row total">
+            <span>Итого</span>
+            <span>67 480 сом</span>
+          </div>
+          <button class="checkout-btn">Оформить заказ</button>
         </div>
-        <div class="actions">
-          <button>Add to cart</button>
-        </div>
-      </article>
+      </section>
     </main>
 
-    <script src="./js/scritpt.js"></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/card.js"></script>
   </body>
 </html>
